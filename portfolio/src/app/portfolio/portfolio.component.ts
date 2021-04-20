@@ -19,18 +19,18 @@ export class PortfolioComponent implements OnInit {
   {
     skill: "Vue",
   }, {
-    skill: "Mysql",
+    skill: "MySql",
   }]
   projects: any = [{
-    image: "https://image.shutterstock.com/image-illustration/beautiful-aurora-universe-milky-way-260nw-1787056478.jpg",
-   skills: ["React", "mySql", "NodeJs"] ,
+    image: "https://storyxag.com/wp-content/uploads/2020/06/shutterstock_1652904175_300-librarians_magnesio-min-1024x483.png",
+   skills: ["React", "MySql", "NodeJs"] ,
    title: "MVP Project:Shoppinettes" ,
    description: "This project is a shopping site where I used React, NodJs and mySql. i implemented all CRUD operations" ,
    demo : "" , 
    code :"https://github.com/YassmineRomdhane/rbktnX-mvp-starter"
 },
 {
-  image: "https://image.shutterstock.com/image-illustration/beautiful-aurora-universe-milky-way-260nw-1787056478.jpg",
+  image: "https://www.dealsshutter.com/blog/wp-content/uploads/2020/03/homeservice.jpg",
  skills: ["#Angular", "#mongoDB", "NodeJs"] ,
  title: "Thesis Project: GaryWork" ,
 description: "This project is a platform meant to provide users with different services related to house needs. It also helps service providers to gain clients" ,
