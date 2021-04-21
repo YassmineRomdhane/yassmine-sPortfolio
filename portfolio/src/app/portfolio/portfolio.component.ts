@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {BUTTONS,PROJECTS} from './mockData'
+import {BUTTONS,PROJECTS,BlOGS} from './mockData'
 
 @Component({
   selector: 'app-portfolio',
@@ -12,9 +12,30 @@ export class PortfolioComponent implements OnInit {
   array: any = [];
   buttons: any = BUTTONS
   projects: any = PROJECTS
+  blogs :any= BlOGS
+  projectsNumber:number=PROJECTS.length
+  page:number
+  blogsNumber:number=BlOGS.length
 
   ngOnInit(): void {
-    // this.projects=this
+  
+//     var items = $(".pro .project");
+//     var numItems = this.projects.length;
+//  var perPage = 3;
+
+//   this.projects.slice(perPage).hide();
+
+//   $('.pagination').pagination({
+//         items: numItems,
+//       itemsOnPage: perPage,
+//          prevText: "&laquo;",
+//         nextText: "&raquo;",
+//       onPageClick: function (pageNumber) {
+//            var showFrom = perPage * (pageNumber - 1);
+//            var showTo = showFrom + perPage;
+//             items.hide().slice(showFrom, showTo).show();
+//         }
+//     });
   }
   filterByTags(val) {
     var newArr = []
@@ -54,3 +75,24 @@ export class PortfolioComponent implements OnInit {
   // }
 
 }
+
+
+
+
+// var items = $(".list-wrapper .list-item");
+//     var numItems = items.length;
+//     var perPage = 4;
+
+//     items.slice(perPage).hide();
+
+//     $('#pagination-container').pagination({
+//         items: numItems,
+//         itemsOnPage: perPage,
+//         prevText: "&laquo;",
+//         nextText: "&raquo;",
+//         onPageClick: function (pageNumber) {
+//             var showFrom = perPage * (pageNumber - 1);
+//             var showTo = showFrom + perPage;
+//             items.hide().slice(showFrom, showTo).show();
+//         }
+//     });

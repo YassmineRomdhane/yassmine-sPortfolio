@@ -65,7 +65,7 @@ p{
 }
 .hobbies-img{
     width:100%;
-    height:160px;
+    height:180px;
     border-radius: 12px;
 
 }
@@ -116,7 +116,9 @@ p{
     height:93%
 }
 .name{
-    color: grey;
+    color:rgb(168, 115, 115);
+    font-size: 35px;
+
     }
 .blogBody{
     margin-top:2rem;
@@ -126,10 +128,10 @@ p{
 .blogImg{
   /* margin-top: 2rem; */
     width: 100%;
-    height: 500px
+    height: 250px
 }
 .blogTitle{
-    font-size:30px;
+    font-size:20px;
 }
 
 
@@ -312,6 +314,7 @@ p{
 }
 .image:hover{
   opacity:0.6;
+  transform: scale(1.1);
 }
 
 .tags{
