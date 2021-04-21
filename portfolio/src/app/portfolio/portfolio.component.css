@@ -99,10 +99,10 @@ p{
     max-width: 500px;
     margin-top: 20px;  
 }
-.blg{
+/* .blg{
     display:grid;
-    grid-template-columns: 1FR 1FR;
-}
+    grid-template-: 1FR 1FR 1FR ;
+} */
 .blog{
     background:white;
     padding: 1.5rem;
@@ -113,18 +113,19 @@ p{
     /* margin: 0 auto; */
     max-width: 752px;
     margin-top: 20px; 
-    height:92%
+    height:93%
 }
 .name{
     color: grey;
     }
 .blogBody{
     margin-top:2rem;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
 }
 .blogImg{
-    width: 350px;
+  /* margin-top: 2rem; */
+    width: 100%;
     height: 500px
 }
 .blogTitle{

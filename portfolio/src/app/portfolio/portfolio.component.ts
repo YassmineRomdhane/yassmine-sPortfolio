@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BUTTONS,PROJECTS} from './mockData'
 
 @Component({
   selector: 'app-portfolio',
@@ -8,58 +9,48 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioComponent implements OnInit {
 
   constructor() { }
-  backup: any = [];
-  buttons: any = [{
-    skill: "all",
-  },
-  {skill: "React",
-}, {
-    skill: "Angular",
-  },
-  {
-    skill: "Vue",
-  }, {
-    skill: "MySql",
-  }]
-  projects: any = [{
-    image: "https://storyxag.com/wp-content/uploads/2020/06/shutterstock_1652904175_300-librarians_magnesio-min-1024x483.png",
-   skills: ["React", "MySql", "NodeJs"] ,
-   title: "MVP Project:Shoppinettes" ,
-   description: "This project is a shopping site where I used React, NodJs and mySql. i implemented all CRUD operations" ,
-   demo : "" , 
-   code :"https://github.com/YassmineRomdhane/rbktnX-mvp-starter"
-},
-{
-  image: "https://www.dealsshutter.com/blog/wp-content/uploads/2020/03/homeservice.jpg",
- skills: ["#Angular", "#mongoDB", "NodeJs"] ,
- title: "Thesis Project: GaryWork" ,
-description: "This project is a platform meant to provide users with different services related to house needs. It also helps service providers to gain clients" ,
- demo : "" , 
- code :"https://github.com/The-Garys"
-},
-{
-  image: "https://image.shutterstock.com/image-illustration/beautiful-aurora-universe-milky-way-260nw-1787056478.jpg",
- skills: ["#React","NodeJs"] ,
- title: "FrontEndCapstone" ,
-description: "This projects was about mimicking a single page details of Amazon and I interacted with a provided API" ,
- demo : "demo" , 
- code :"https://github.com/Explosion2k21"
-},
-  ]
+  array: any = [];
+  buttons: any = BUTTONS
+  projects: any = PROJECTS
 
   ngOnInit(): void {
-  // this.projects=this
+    // this.projects=this
   }
-filterByTags(val){
-  var newArr = []
-  this.projects.map((e)=>{
-      if(e.skills.includes(val)){
+  filterByTags(val) {
+    var newArr = []
+    // if (val === 'all') {
+      // this.projects=this.array}
+    this.projects.map((e) => {
+      console.log('hello',e.skills)
+      // val=val.toUpperCase()
+      if (e.skills.includes(val)) {
+        console.log('hel',e.skills)
         newArr.push(e)
+        console.log('HII',e)
       }
+      this.ngOnInit()
     })
     this.projects = newArr
-    this.ngOnInit()
- 
-}
+    
+   
+  // }
+  }
+  // filterByTags(val) {
+  //   var newArr = []
+  //   let reg = new RegExp(val,'g');
+  // let reg = new RegExp(val,'g');
+  //   this.projects.map((e) => {
+  //     val=val.toUpperCase()
+  //     var skill=e.skills.toUpperCase()
+  //     if (skill.matchAll(reg)) {
+
+  //       newArr.push(e)
+      
+  //     }
+  //   })
+  //   this.projects = newArr
+  //   this.ngOnInit()
+
+  // }
 
 }
