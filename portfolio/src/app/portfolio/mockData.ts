@@ -24,7 +24,7 @@ export const BUTTONS = [{
     skills: ["#Angular", "#mongoDB", "#NodeJs"],
     title: "Thesis Project: GaryWork",
     description: "This project is a platform meant to provide users with different services related to house needs",
-    demo: "",
+    demo: "",          
     code: "https://github.com/The-Garys"
   },
   {
