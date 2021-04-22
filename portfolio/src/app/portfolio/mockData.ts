@@ -1,5 +1,5 @@
 export const BUTTONS = [{
-    skill: "all",
+    skill: "All Projects",
   },
   {
     skill: "React",
@@ -7,8 +7,10 @@ export const BUTTONS = [{
     skill: "Angular",
   },
   {
-    skill: "Vue",
+    skill: "mongoDB",
   }, {
+  skill: "vue",
+},{
     skill: "MySql",
   }]
  export const PROJECTS= [{

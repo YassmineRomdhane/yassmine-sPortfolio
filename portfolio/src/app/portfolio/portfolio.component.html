@@ -198,17 +198,11 @@
             </div>
             <section class="projects_section">
                 <div class="projects_header">
-                    <h3>projects ({{projectsNumber}})</h3>
+                    <h3 class="proj">projects ({{projectsNumber}})</h3>
                     <div class="technologies" *ngFor="let e of buttons">
                         <button (click)="filterByTags(e.skill)">{{ e.skill }}</button>
 
                     </div>
-
-
-                    <!-- <button (click)="takeMeTo('React')">React</button>
-                <button (click)="takeMeTo('CSS')">CSS</button>
-                <button (click)="takeMeTo('Html')">HTML</button>
-                <button (click)="takeMeTo('Responsive')">Responsive</button> -->
 
                 </div>
                 <div class="pro">
@@ -236,21 +230,8 @@
 
 
                 </div>
-                <div>
+                
                 <pagination-controls class='pagination' (pageChange)="page = $event"></pagination-controls>
-            </div>
-                <!-- <div class="pagination">
-                    <a href="#">❮</a>
-                    <a href="#">&laquo;</a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
-                    <a href="#">❯</a>
-                </div> -->
             </section>
 
 

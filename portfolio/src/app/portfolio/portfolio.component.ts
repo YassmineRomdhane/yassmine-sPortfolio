@@ -23,25 +23,19 @@ export class PortfolioComponent implements OnInit {
   }
   filterByTags(val) {
     console.log("ssss",val)
+    this.ngOnInit()
     var newArr = []
     const hashtag="#"+val
-    if (val === 'all') {
-      this.projects=this.array}
+    
+    if (val !== 'All Projects') {
     this.projects.map((e) => {
     // val=val.toUpperCase()
       if (e.skills.includes(hashtag)) {
       newArr.push(e)
       }
-     
-      // console.log(this.projects)
-    
-    })
-    this.ngOnInit()
+     })
     this.projects = newArr
-    newArr=this.projects
-    
-    
-    
+  }  
    
  
   }
