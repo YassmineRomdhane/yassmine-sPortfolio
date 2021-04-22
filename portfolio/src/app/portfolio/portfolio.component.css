@@ -17,9 +17,22 @@ h2{
 p{
     color: rgb(94, 93, 93);
 }
+.links{
+  text-decoration: none;
+  
+}
+
+a:link {
+  text-decoration: none;
+  color: grey;
+   /* background-color: grey; */
+   font-family: 'Times New Roman', Times, serif;
+
+}
 .contact{
   margin-top:4rem;
   font-size:18px;
+  text-decoration: none;
 }
 .bars{
     display:grid;
@@ -147,7 +160,7 @@ p{
     border-radius: 10px;
     width: 90%;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 600px;
     margin-top: 20px; 
     height:400px;
 }
@@ -415,7 +428,9 @@ button:hover{
   display: inline-block;
   margin-top:1.5rem;
   margin-left: 65%;
-  background:white;
+  /* background:white; */
+  /* width:70%; */
+  font-size: 20px;
 
 
 }

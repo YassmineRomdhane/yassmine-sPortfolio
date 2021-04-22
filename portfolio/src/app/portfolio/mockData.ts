@@ -2,14 +2,14 @@ export const BUTTONS = [{
     skill: "all",
   },
   {
-    skill: "#React",
+    skill: "React",
   }, {
-    skill: "#Angular",
+    skill: "Angular",
   },
   {
-    skill: "#Vue",
+    skill: "Vue",
   }, {
-    skill: "#MySql",
+    skill: "MySql",
   }]
  export const PROJECTS= [{
     image: "../assets/shop.png",
