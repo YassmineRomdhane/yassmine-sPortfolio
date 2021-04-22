@@ -415,6 +415,7 @@ button:hover{
   display: inline-block;
   margin-top:1.5rem;
   margin-left: 65%;
+  background:white;
 
 
 }
@@ -425,6 +426,7 @@ button:hover{
   padding: 8px 16px;
   text-decoration: none;
   border: 1px solid black;
+  
 }
 
 .pagination a.active {

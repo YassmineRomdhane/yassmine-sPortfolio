@@ -28,7 +28,7 @@ export const BUTTONS = [{
     code: "https://github.com/The-Garys"
   },
   {
-    image: "https://www.lsa-conso.fr/mediatheque/7/8/7/000143787_2_mobile.jpg",
+    image: "../assets/amazon.png",
     skills: ["#React", "#NodeJs"],
     title: "FrontEndCapstone",
     description: "This projects was about mimicking a single page details of Amazon and I interacted with a provided API",

@@ -12,30 +12,14 @@ export class PortfolioComponent implements OnInit {
   array: any = [];
   buttons: any = BUTTONS
   projects: any = PROJECTS
+  filteredProjects:any=[]
   blogs :any= BlOGS
   projectsNumber:number=PROJECTS.length
   page:number
   blogsNumber:number=BlOGS.length
 
   ngOnInit(): void {
-  
-//     var items = $(".pro .project");
-//     var numItems = this.projects.length;
-//  var perPage = 3;
-
-//   this.projects.slice(perPage).hide();
-
-//   $('.pagination').pagination({
-//         items: numItems,
-//       itemsOnPage: perPage,
-//          prevText: "&laquo;",
-//         nextText: "&raquo;",
-//       onPageClick: function (pageNumber) {
-//            var showFrom = perPage * (pageNumber - 1);
-//            var showTo = showFrom + perPage;
-//             items.hide().slice(showFrom, showTo).show();
-//         }
-//     });
+    this.projects=PROJECTS
   }
   filterByTags(val) {
     var newArr = []
@@ -54,8 +38,8 @@ export class PortfolioComponent implements OnInit {
     this.projects = newArr
     
    
-  // }
   }
+  // }
   // filterByTags(val) {
   //   var newArr = []
   //   let reg = new RegExp(val,'g');
@@ -74,25 +58,18 @@ export class PortfolioComponent implements OnInit {
 
   // }
 
+//   filterByTags(val) {
+//     console.log("ssss",val)
+//     var newArr = []
+//     this.projects.filter((event) => {
+
+//       if(event.skills.includes(val)) {
+//         newArr.push(event)
+//         console.log("gggg",newArr)
+//       }
+//     });
+//     this.projects = newArr
+//     this.ngOnInit()
+// } 
 }
 
-
-
-
-// var items = $(".list-wrapper .list-item");
-//     var numItems = items.length;
-//     var perPage = 4;
-
-//     items.slice(perPage).hide();
-
-//     $('#pagination-container').pagination({
-//         items: numItems,
-//         itemsOnPage: perPage,
-//         prevText: "&laquo;",
-//         nextText: "&raquo;",
-//         onPageClick: function (pageNumber) {
-//             var showFrom = perPage * (pageNumber - 1);
-//             var showTo = showFrom + perPage;
-//             items.hide().slice(showFrom, showTo).show();
-//         }
-//     });
