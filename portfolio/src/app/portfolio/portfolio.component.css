@@ -17,15 +17,22 @@ h2{
 p{
     color: rgb(94, 93, 93);
 }
-a:link {
+.links:link {
   text-decoration: none;
-  /* color: grey; */
+  color:black;
   font-family: 'Times New Roman', Times, serif;
 
+}
+.links:visited {
+  color:black;
+}
+.links:active {
+  color: blue;
 }
 .contact{
   margin-top:4rem;
   font-size:18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .bars{
     display:grid;
@@ -139,6 +146,7 @@ a:link {
     margin-top:2rem;
     font-size: 20px;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .blogImg{
   /* margin-top: 2rem; */
@@ -377,11 +385,13 @@ a{
   
 }
 .description{
-  color: grey;
+  color:red;
   font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .title{
   font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .demoBtn{
@@ -427,7 +437,7 @@ button:focus {
 .technologies{
     display: inline-block;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .pro{
   display:grid;
@@ -441,6 +451,22 @@ button:focus {
   margin-top:1.5rem;
   margin-left: 65%;
   font-size: 25px;
+} 
+
+.footer-copyright{
+  text-align: center;
+  font-size: 25px;
+  color:rgb(155, 151, 151);
+  margin-top: 2rem;
+  text-decoration: none;
+}
+.copyright:link{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.copyright:visited{
+  color:rgb(59, 59, 59);
+  font-size: 20px;
 }
 
 

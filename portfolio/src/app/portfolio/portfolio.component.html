@@ -23,14 +23,14 @@
                             <p>
                                 <span class="fab fa-linkedin icon">
                                 </span>
-                                <a class="links" href="https://www.linkedin.com/in/romdhane-yassmine-2b323820b/">Yassmine</a>
+                                <a class="links" href="https://www.linkedin.com/in/yassmine-rm/">Yassmine</a>
                                 
                                 
                             </p>
                             <p>
                                 <span class="fab fa-github icon">
                                 </span>
-                                <a href="https://github.com/YassmineRomdhane">Yassmine Romdhane</a>
+                                <a class="links" href="https://github.com/YassmineRomdhane">Yassmine Romdhane</a>
                             </p>
                             <p>
                                 <span class="fas fa-phone icon">
@@ -215,7 +215,7 @@
                             <div class="projectInfo">
                                 <h2 class="title">{{p.title}}</h2>
                                 <div class="decription">
-                                    <p>{{p.description}}</p>
+                                    <p class="decription">{{p.description}}</p>
                                     <div class="link">
                                         <a href={{p.demo}} class="demoBtn btn">demo</a>
                                         <a href={{p.code}} class="codeBtn btn">code</a>
@@ -234,7 +234,12 @@
                 <pagination-controls class='pagination' (pageChange)="page = $event"></pagination-controls>
             </section>
 
-
+            <footer>
+                <div class="footer-copyright text-center py-3">
+                    © 2021 Copyright:
+                    <a class="copyright" href="https://github.com/YassmineRomdhane/yassmine-sPortfolio">yassmine Romdhane</a>
+                  </div>
+              </footer>
 
 
         </div>
