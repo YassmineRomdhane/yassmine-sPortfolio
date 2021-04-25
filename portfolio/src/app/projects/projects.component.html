@@ -1,0 +1,45 @@
+<section class="projects_section">
+    <div class="projects_header">
+        <h3 class="proj">projects ({{projectsNumber}})</h3>
+        <div class="technologies" *ngFor="let e of buttons">
+            <button (click)="filterByTags(e.skill)">{{ e.skill }}</button>
+
+        </div>
+
+    </div>
+    <div class="pro">
+        <div class="project" *ngFor="let p of projects | paginate: { itemsPerPage:3, currentPage: page , totalItems:projectsNumber }" >
+            <img class="image" src="{{p.image}}" alt="">
+            <div class="project_content">
+                <div class="tags" *ngFor="let c of p.skills">
+                    {{c}}
+                </div>
+                <div class="projectInfo">
+                    <h2 class="title">{{p.title}}</h2>
+                    <div class="decription">
+                        <p class="decription">{{p.description}}</p>
+                        <div class="link">
+                            <a href={{p.demo}} class="demoBtn btn">demo</a>
+                            <a href={{p.code}} class="codeBtn btn">code</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+       
+
+
+    </div>
+    
+    <pagination-controls class='pagination' (pageChange)="page = $event"></pagination-controls>
+</section>
+
+<footer>
+    <div class="footer-copyright text-center py-3">
+        © 2021 Copyright:
+        <a class="copyright" href="https://github.com/YassmineRomdhane/yassmine-sPortfolio">yassmine Romdhane</a>
+      </div>
+  </footer>
+

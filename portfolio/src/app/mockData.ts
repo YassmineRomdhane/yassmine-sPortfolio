@@ -99,16 +99,22 @@ export const PROJECTS = [{
 
 export const BlOGS = [
   {
-    title: "Why do you always need to learn new Technologies?",
-    image: "https://cdn-images-1.medium.com/max/800/1*wwgaOnLdrGHkjUU3g1SDhg.jpeg",
-    body: " we are living in the generation of technologies",
-    link: ""
-  },
-  {
     title: "A world without developers!",
     image: "https://miro.medium.com/max/1145/1*pKpqN0Mw45eSQQKypC9Vsw.png",
     body: "Programming is very important for our future, I really can not imagine a world without developers , since they are making our life easier , also we can not improve our life without internet, its like a magical think which can change people’s lives",
-    link: "https://medium.com/me/stories/public"
+    link: "https://yassmineromdhane1996.medium.com/new-challenge-8ce05cb40ca0"
+  },
+  // {
+  //   title: "Why do you always need to learn new Technologies?",
+  //   image: "https://cdn-images-1.medium.com/max/800/1*wwgaOnLdrGHkjUU3g1SDhg.jpeg",
+  //   body: " we are living in the generation of technologies",
+  //   link: ""
+  // },
+  {
+    title: "New Challenge!",
+    image: "https://www.uni-med.net/wp-content/uploads/2020/04/Immagine.jpeg",
+    body: "Its true that everyone wants to be comfortable in his work , but the meaning of feeling comfortable depends on the way you’r seeing it . for example when I find myself really comfortable I start doubting , I think that there will be something wrong",
+    link: "https://yassmineromdhane1996.medium.com/new-challenge-8ce05cb40ca0"
   }
 
 ]
