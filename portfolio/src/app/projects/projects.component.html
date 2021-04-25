@@ -1,6 +1,6 @@
 <section class="projects_section">
     <div class="projects_header">
-        <h3 class="proj">projects ({{projectsNumber}})</h3>
+        <h3 class="proj">Projects ({{projectsNumber}})</h3>
         <div class="technologies" *ngFor="let e of buttons">
             <button (click)="filterByTags(e.skill)">{{ e.skill }}</button>
 
@@ -17,7 +17,7 @@
                 <div class="projectInfo">
                     <h2 class="title">{{p.title}}</h2>
                     <div class="decription">
-                        <p class="decription">{{p.description}}</p>
+                        <p class="description">{{p.description}}</p>
                         <div class="link">
                             <a href={{p.demo}} class="demoBtn btn">demo</a>
                             <a href={{p.code}} class="codeBtn btn">code</a>
