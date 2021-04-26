@@ -47,6 +47,7 @@
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
+  
 }
 @keyframes showText {
   100%{
